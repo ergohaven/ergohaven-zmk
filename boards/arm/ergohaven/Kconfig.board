@@ -1,8 +1,8 @@
-# nrfmicro board configuration
+# ergohaven board configuration
 
 # Copyright (c) 2020 The ZMK Contributors
 # SPDX-License-Identifier: MIT
 
-config BOARD_NRFMICRO_13
-    bool "nrfmicro_13"
+config BOARD_ERGOHAVEN
+    bool "ergohaven"
     depends on SOC_NRF52840_QIAA

@@ -3,10 +3,10 @@
 # Copyright (c) 2020 The ZMK Contributors
 # SPDX-License-Identifier: MIT
 
-if  BOARD_NRFMICRO_13
+if BOARD_ERGOHAVEN
 
 config BOARD
-    default "nrfmicro"
+    default "ergohaven"
 
 if USB_DEVICE_STACK
 
@@ -18,7 +18,7 @@ endif # USB_DEVICE_STACK
 config BT_CTLR
     default BT
 
-config BOARD_NRFMICRO_CHARGER
-    default y
+config BOARD_ERGOHAVEN_CHARGER
+    default n
 
-endif #  BOARD_NRFMICRO_13
+endif # BOARD_ERGOHAVEN

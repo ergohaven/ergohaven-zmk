@@ -8,8 +8,8 @@
 #include <nordic/nrf52840_qiaa.dtsi>
 
 / {
-    model = "nrfmicro";
-    compatible = "joric,nrfmicro";
+    model = "Ergohaven E73 2G4M08S1C";
+    compatible = "ergohaven,nrf52840";
 
     chosen {
         zephyr,code-partition = &code_partition;
