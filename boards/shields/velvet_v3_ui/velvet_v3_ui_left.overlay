@@ -1,5 +1,4 @@
 #include "velvet_v3_ui.dtsi"
-#include "velvet_v3_ui_pmw3610.dtsi"
 
 &kscan0 {
     col-gpios
@@ -21,9 +20,6 @@
         ;
 };
 
-/ {
-  trackball_listener {
-    compatible = "zmk,input-listener";
-    device = <&trackball>;
-  };
+&trackball_listener {
+    status = "okay";
 };
