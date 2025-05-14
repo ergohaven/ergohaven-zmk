@@ -13,4 +13,7 @@ if SHIELD_K03_LEFT || SHIELD_K03_RIGHT
 config ZMK_SPLIT
     default y
 
+config ZMK_POINTING
+    default y
+
 endif

@@ -13,4 +13,7 @@ if SHIELD_VELVET_V3_LEFT || SHIELD_VELVET_V3_RIGHT
 config ZMK_SPLIT
     default y
 
+config ZMK_POINTING
+    default y
+
 endif
