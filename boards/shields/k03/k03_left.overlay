@@ -20,3 +20,7 @@
         , <&gpio1 11 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
         ;
 };
+
+&encoder_L1 {
+    status = "okay";
+};
