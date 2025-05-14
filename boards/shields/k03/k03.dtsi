@@ -39,13 +39,13 @@ RC(3,5)  RC(3,4)  RC(3,3)  RC(3,2)  RC(3,1)  RC(3,0)  RC(4,0)    RC(4,6)  RC(3,6
         compatible = "alps,ec11";
         a-gpios = <&gpio0 0 GPIO_PULL_UP>;
         b-gpios = <&gpio0 1 GPIO_PULL_UP>;
-        steps = <80>;
+        steps = <60>;
         status = "disabled";
     };
 
     sensors: sensors {
         compatible = "zmk,keymap-sensors";
         sensors = <&encoder_L1>;
-        triggers-per-rotation = <6>;
+        triggers-per-rotation = <12>;
     };
 };
