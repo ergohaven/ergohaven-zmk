@@ -91,14 +91,14 @@ RC(3,5)  RC(3,4)  RC(3,3)  RC(3,2)  RC(3,1)  RC(3,0)  RC(4,0)    RC(4,6)  RC(3,6
 };
 
 &pinctrl {
-    spi1_default: spi0_default {
+    spi0_default: spi0_default {
         group1 {
             psels = <NRF_PSEL(SPIM_SCK, 0, 30)>,
                 <NRF_PSEL(SPIM_MOSI, 0, 5)>,
                 <NRF_PSEL(SPIM_MISO, 0, 5)>;
         };
     };
-    spi1_sleep: spi0_sleep {
+    spi0_sleep: spi0_sleep {
         group1 {
             psels = <NRF_PSEL(SPIM_SCK, 0, 30)>,
                 <NRF_PSEL(SPIM_MOSI, 0, 5)>,
@@ -110,8 +110,8 @@ RC(3,5)  RC(3,4)  RC(3,3)  RC(3,2)  RC(3,1)  RC(3,0)  RC(4,0)    RC(4,6)  RC(3,6
 
 nice_view_spi: &spi0 {
     compatible = "nordic,nrf-spim";
-    pinctrl-0 = <&spi1_default>;
-    pinctrl-1 = <&spi1_sleep>;
+    pinctrl-0 = <&spi0_default>;
+    pinctrl-1 = <&spi0_sleep>;
     pinctrl-names = "default", "sleep";
     cs-gpios = <&gpio1 9 GPIO_ACTIVE_HIGH>;
 };
