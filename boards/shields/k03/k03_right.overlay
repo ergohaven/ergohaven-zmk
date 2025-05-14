@@ -24,3 +24,15 @@
         , <&gpio0 13 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
         ;
 };
+
+&encoder_L1 {
+    status = "okay";
+};
+
+&encoder_L2 {
+    status = "okay";
+};
+
+&encoder_L3 {
+    status = "okay";
+};
