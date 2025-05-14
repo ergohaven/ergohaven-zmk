@@ -13,4 +13,7 @@ if SHIELD_OP36_LEFT || SHIELD_OP36_RIGHT
 config ZMK_SPLIT
     default y
 
+config ZMK_POINTING
+    default y
+
 endif
