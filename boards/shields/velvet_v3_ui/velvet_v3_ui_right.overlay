@@ -47,10 +47,27 @@
     };
 };
 
+/ {
+    split_inputs {
+        #address-cells = <1>;
+        #size-cells = <0>;
+
+        trackball_split: trackball_split@0 {
+            compatible = "zmk,input-split";
+            reg = <0>;
+        };
+    };
+};
+
 // Overrides for the input-split child node
 &trackball_split {
     device = <&trackball>;
 
     // Optional
     // input-processors = <&zip_xy_transform (INPUT_TRANSFORM_XY_SWAP | INPUT_TRANSFORM_X_INVERT | INPUT_TRANSFORM_Y_INVERT)>;
+};
+
+&trackball_listener {
+    status = "okay";
+    device = <&trackball_split>;
 };
