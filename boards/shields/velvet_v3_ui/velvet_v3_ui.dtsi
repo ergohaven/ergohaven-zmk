@@ -1,4 +1,5 @@
 #include <dt-bindings/zmk/matrix_transform.h>
+#include <zephyr/dt-bindings/input/input-event-codes.h>
 #include "velvet_v3_ui_layout.dtsi"
 
 / {
@@ -41,5 +42,27 @@ RC(2,0) RC(2,1) RC(2,2) RC(2,3) RC(2,4) RC(2,5)                  RC(2,6) RC(2,7)
     trackball_listener: trackball_listener {
         compatible = "zmk,input-listener";
         status = "disabled";
+    };
+};
+
+&spi0 {
+    status = "disabled";
+    cs-gpios = <&gpio0 13 GPIO_ACTIVE_LOW>;
+
+    trackball: trackball@0 {
+        status = "disabled";
+        compatible = "pixart,pmw3610";
+        reg = <0>;
+        spi-max-frequency = <2000000>;
+        irq-gpios = <&gpio0 15 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>;
+        cpi = <1000>;
+        evt-type = <INPUT_EV_REL>;
+        x-input-code = <INPUT_REL_X>;
+        y-input-code = <INPUT_REL_Y>;
+
+        force-awake;
+        /* keep the sensor awake while ZMK activity state is ACTIVE,
+           fallback to normal downshift mode after ZMK goes into IDLE / SLEEP mode.
+           thus, the sensor would be a `wakeup-source` */
     };
 };
