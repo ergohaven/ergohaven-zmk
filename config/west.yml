@@ -8,8 +8,6 @@ manifest:
       url-base: https://github.com/badjeff
     - name: carrefinho
       url-base: https://github.com/carrefinho
-    - name: janpfischer
-      url-base: https://github.com/janpfischer
   projects:
     - name: zmk
       remote: zmkfirmware
@@ -21,8 +19,8 @@ manifest:
     - name: prospector-zmk-module
       remote: carrefinho
       revision: main
-    - name: zmk-dongle-screen
-      remote: janpfischer
-      revision: main
+    - name: ergohaven-zmk-qube
+      remote: ergohaven
+      revision: eh
   self:
     path: config
