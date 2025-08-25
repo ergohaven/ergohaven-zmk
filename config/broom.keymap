@@ -31,8 +31,6 @@
                 <&enc_vol>,
                 <&enc_vol>,
                 <&enc_vol>,
-                <&enc_vol>,
-                <&enc_vol>,
                 <&enc_vol>;
         };
 

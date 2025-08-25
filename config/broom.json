@@ -100,20 +100,6 @@
         "identifier": "encoder_R2",
         "compatible": "alps,ec11",
         "label": "ENCODER_R2"
-      },
-      {
-        "ref": "encoder_L3",
-        "name": "encoder_L3",
-        "identifier": "encoder_L3",
-        "compatible": "alps,ec11",
-        "label": "ENCODER_L3"
-      },
-      {
-        "ref": "encoder_R3",
-        "name": "encoder_R3",
-        "identifier": "encoder_R3",
-        "compatible": "alps,ec11",
-        "label": "ENCODER_R3"
       }
     ]
   }

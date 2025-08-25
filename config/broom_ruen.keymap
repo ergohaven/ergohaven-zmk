@@ -103,8 +103,6 @@
                 <&enc_vol>,
                 <&enc_vol>,
                 <&enc_vol>,
-                <&enc_vol>,
-                <&enc_vol>,
                 <&enc_vol>;
         };
 
@@ -119,8 +117,6 @@
             >;
 
             sensor-bindings =
-                <&enc_vol>,
-                <&enc_vol>,
                 <&enc_vol>,
                 <&enc_vol>,
                 <&enc_vol>,
