@@ -1,0 +1,11 @@
+config SHIELD_BROOM_LEFT_QUBE
+    def_bool $(shields_list_contains,broom_left_qube)
+
+config SHIELD_BROOM_QUBE
+    def_bool $(shields_list_contains,broom_qube)
+
+config SHIELD_BROOM_LEFT
+    def_bool $(shields_list_contains,broom_left)
+
+config SHIELD_BROOM_RIGHT
+    def_bool $(shields_list_contains,broom_right)
