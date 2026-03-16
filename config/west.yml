@@ -6,6 +6,8 @@ manifest:
       url-base: https://github.com/ergohaven
     - name: kot149
       url-base: https://github.com/kot149
+    - name: hsgw
+      url-base: https://github.com/hsgw
   projects:
     - name: zmk
       remote: zmkfirmware
@@ -23,5 +25,8 @@ manifest:
     - name: zmk-scroll-snap
       remote: kot149
       revision: v1
+    - name: zmk-feature-sensor_rotation
+      remote: hsgw
+      revision: e1a0186220ade99220d04dadf9735b758cfdf086
   self:
     path: config
